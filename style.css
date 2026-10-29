@@ -1,0 +1,44 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f3eb;
+    color: #333333;
+}
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px 0;
+}
+
+header {
+    background-color: #eedcc9;
+    color: #3b2219;
+    padding: 16px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #3b2219;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight:600;
+    transition: color 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #000000;
+    text-decoration: underline;
+}
