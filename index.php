@@ -7,7 +7,6 @@ require_once __DIR__ . '/functions.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=10">
-
     <title>Warkop STK - Profil & Tempat Nongkrong</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style.css">
@@ -22,7 +21,7 @@ require_once __DIR__ . '/functions.php';
             </div>
             <nav>
                 <a href="index.php" class="active">Profil</a>
-                <a href="#katalog.php">Daftar Menu</a>
+                <a href="katalog.php">Daftar Menu</a>
             </nav>
         </div>
     </header>
@@ -31,7 +30,7 @@ require_once __DIR__ . '/functions.php';
         <section>
             <h1>Selamat Datang di Warkop STK</h1>
             <p>
-                Warkop STK adalag ruang santai favorit mahasiswa dan warga sekitar yang menyediakan aneka kopo,
+                Warkop STK adalah ruang santai favorit mahasiswa dan warga sekitar yang menyediakan aneka kopo,
                 olahan mie khas warkop, serta cemilan ringan dengan harga yang terjangkau. tempat yang pas untuk berdiskusi,
                 nongkrong santai, maupun menyelesaikan tugas kuliah bersama.
             </p>
