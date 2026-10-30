@@ -7,6 +7,7 @@ require_once __DIR__ . '/functions.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=10">
+
     <title>Warkop STK - Profil & Tempat Nongkrong</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style.css">
@@ -16,7 +17,7 @@ require_once __DIR__ . '/functions.php';
     <header>
         <div class="container nav-container">
             <div class="brand">
-                <img src="assets?logo.png" alt="Logo warkop STK" class="logo-img">
+                <img src="assets/logo.png" alt="Logo warkop STK" class="logo-img">
                 <h1>Warkop STK ( Sedulur Tunggal Kopi )</h1>
             </div>
             <nav>
@@ -54,7 +55,7 @@ require_once __DIR__ . '/functions.php';
     </main>
 
     <footer>
-        <p>&copy; <?= e(date('Y')); ?> Warkop STK. Dibuat untuk UTS Pemograman Web.</p>
+        <p>&copy; 2026 Warkop STK. Dibuat untuk UTS Pemrograman Web.</p>
     </footer>
 </body>
 </html>
