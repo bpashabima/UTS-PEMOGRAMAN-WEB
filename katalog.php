@@ -29,8 +29,8 @@ if ($kategoriTerpilih !== 'all') {
             <h1>Warkop STK ( Sedulur Tunggal Kopi )</h1>
         </div>
         <nav>
-            <a href="index.php" class="active">Profil</a>
-            <a href="katalog.php">Daftar Menu</a>
+            <a href="index.php">Profil</a>
+            <a href="katalog.php" class="active">Daftar Menu</a>
         </nav>
     </div>
     </header>

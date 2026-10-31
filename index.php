@@ -47,8 +47,8 @@ require_once __DIR__ . '/functions.php';
         </section>
 
         <section>
-            <h2>Lokasi & Jam OperasionalWarkop STK</h2>
-            <p><strong>Alamat:</strong>Jl. Kenjeran No.329, Gading, Kecamatan Tambaksari Surabaya, Jawa Timur</p>
+            <h2>Lokasi & Jam Operasional Warkop STK</h2>
+            <p><strong>Alamat:</strong> Jl. Kenjeran No.329, Gading, Kecamatan Tambaksari Surabaya, Jawa Timur</p>
             <p><strong>Jam Operasional:</strong> Buka Setiap Hari ( 24 Jam Nonstop )</p>
         </section>
     </main>
