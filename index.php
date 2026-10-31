@@ -42,7 +42,7 @@ require_once __DIR__ . '/functions.php';
                 <div class="fasilitas-card">Wifi Kencang 24 Jam</div>
                 <div class="fasilitas-card">Banyak Colokan Listrik</div>
                 <div class="fasilitas-card">Area Nobar Sepak Bola</div>
-                <div class="fasilitas-card">Parkir Motor Luas $ Aman</div>
+                <div class="fasilitas-card">Parkir Motor Luas & Aman</div>
             </div>
         </section>
 

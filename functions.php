@@ -34,3 +34,4 @@ function hitungRingkasan(array $data): array
         'termurah' => $hargaTermurah,
     ];
 }
+

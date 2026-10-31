@@ -104,3 +104,137 @@ footer {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.stat-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-top: 4px solid #8c533e;
+}
+
+.stat-card p {
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+.stat-card span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3b2219;
+}
+
+/* Katalog Grid */
+.katalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.menu-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 18px;
+    border: 1px solid #e2d7cd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.menu-card .kategori {
+    font-size: 0.8rem;
+    color: #8c533e;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu-card .harga {
+    font-weight: bold;
+    font-size: 1.15rem;
+    margin: 8px 0;
+    color: #2b1704;
+}
+
+/* Badge Status */
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-align: center;
+    width: fit-content;
+}
+
+.badge-success {
+    background-color: #e6f4ea;
+    color: #137333;
+}
+
+.badge-warning {
+    background-color: #fef7e0;
+    color: #b06000;
+}
+
+.badge-danger {
+    background-color: #fce8e6;
+    color: #c5221f;
+}
+
+/* Layout Header Katalog & Tombol Filter */
+.katalog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.katalog-header h2 {
+    margin-bottom: 0;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-filter {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #faf6f0;
+    color: #3b2219;
+    border: 1px solid #ebd6c8;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-filter:hover {
+    background-color: #eedcc9;
+    text-decoration: none;
+    color: #3b2219;
+}
+
+.btn-filter.active {
+    background-color: #8c533e;
+    color: #ffffff;
+    border-color: #8c533e;
+}

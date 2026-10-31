@@ -5,6 +5,13 @@ require_once __DIR__ . '/data.php';
 require_once __DIR__ . '/functions.php';
 
 $ringkasan = hitungRingkasan($daftarMenu);
+$kategoriTerpilih = isset($_GET['kategori']) ? strtolower((string) $_GET['kategori']) : 'all';
+$menuDitampilkan = $daftarMenu;
+if ($kategoriTerpilih !== 'all') {
+    $menuDitampilkan = array_filter($daftarMenu, function ($item) use ($kategoriTerpilih) {
+        return strtolower($item['kategori']) === $kategoriTerpilih;
+    });
+}
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -19,7 +26,7 @@ $ringkasan = hitungRingkasan($daftarMenu);
     <div class="container nav-container">
         <div class="brand">
             <img src="assets/logo.png" alt="Logo Warkop STK" class="logo-img">
-            <h2>Warkop STK ( Sedulur Tunggal Kopi )</h2>
+            <h1>Warkop STK ( Sedulur Tunggal Kopi )</h1>
         </div>
         <nav>
             <a href="index.php" class="active">Profil</a>
@@ -47,8 +54,19 @@ $ringkasan = hitungRingkasan($daftarMenu);
         <!-- Bagian Grid Katalog Menu -->
         <section>
             <h2>Menu Warkop STK Hari Ini</h2>
+            <div class="katalog-header">
+                <div class="filter-buttons">
+                    <a href="katalog.php?kategori=all"
+                        class="btn-filter <?= $kategoriTerpilih === 'all' ? 'active' : ''; ?>">Semua</a>
+                    <a href="katalog.php?kategori=makanan" 
+                        class="btn-filter <?= $kategoriTerpilih === 'makanan' ? 'active' : ''; ?>">Makanan</a>
+                    <a href="katalog.php?kategori=minuman" 
+                        class="btn-filter <?= $kategoriTerpilih === 'minuman' ? 'active' : ''; ?>">Minuman</a>
+                </div>
+            </div>
+
             <div class="katalog-grid">
-                <?php foreach ($daftarMenu as $item): ?>
+                <?php foreach ($menuDitampilkan as $item): ?>
                     <?php $badge = getStatusBadge($item['stok']); ?>
                     <article class="menu-card">
                         <div>

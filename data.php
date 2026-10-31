@@ -59,14 +59,6 @@ $daftarMenu = [
         'tersedia' => true,
     ],
     [
-        'nama' => 'Play Box',
-        'kategori' => 'Mainan',
-        'jam' => '3 jam',
-        'harga' => 30000,
-        'stok' => 5,
-        'tersedia' => true,
-    ],
-    [
         'nama' => 'Pop Ice',
         'kategori' => 'Minuman',
         'harga' => 5000,
