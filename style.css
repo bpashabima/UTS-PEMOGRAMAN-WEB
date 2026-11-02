@@ -5,10 +5,13 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-    line-height: 1.6;
+    min-height: 100vh;           
+    display: flex;
+    flex-direction: column;     
+    margin: 0;
     background-color: #f7f3eb;
-    color: #333333;
+    color: #3b2219;
+    font-family: Arial, sans-serif;
 }
 .container {
     width: 90%;
@@ -95,6 +98,10 @@ h1, h2, h3 {
     font-weight: 500;
 }
 
+main {
+    flex: 1;
+}
+
 footer {
     background-color: #281710;
     color: #ebd9c8;
@@ -103,9 +110,9 @@ footer {
     font-size: 0.9rem;
     width: 90%;
     max-width: 960px;
-    margin: 40px auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin: auto auto 0 auto;    /* 'auto' atas mendorong footer ke tepi terbawah */
+    border-radius: 8px 8px 0 0; 
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .stats-grid {
